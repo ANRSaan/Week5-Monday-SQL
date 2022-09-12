@@ -7,10 +7,10 @@ const outlier = arr => {
     let lastOdd;
   
     for (i = 0; i < arr.length; i++){
-      if (evens >= 2 && odds > 0 && (evens > odds)){
+      if (evens >= 2 && odds > 0){
         return lastOdd
       }
-      if (odds >= 2 && evens > 0 && (evens < odds)){
+      if (odds >= 2 && evens > 0){
         return lastEven
       }
       if (arr[i] % 2 === 0){
